@@ -7,7 +7,7 @@ name = "trailhound"
 version = "1.0.0"
 description = "Detect attacker behavior in AWS CloudTrail logs and audit IAM policies."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 license = { text = "MIT" }
 
 [project.scripts]
