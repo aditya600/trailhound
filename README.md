@@ -6,12 +6,12 @@ A small, dependency-free command-line toolkit for AWS security work:
 - **`audit-iam`** statically audits IAM policy JSON files for dangerous permissions (6 checks).
 - **Reports** in text, JSON, or Markdown, with exit codes that make it easy to use in CI pipelines.
 
-It needs only Python 3.9+ and nothing else. It never connects to AWS, so it is safe to run on exported logs and policy files.
+It needs only Python 3.11+ and nothing else. It never connects to AWS, so it is safe to run on exported logs and policy files.
 
 ## Quick start
 
 ```bash
-git clone https://github.com/<aditya600>/trailhound.git
+git clone https://github.com/aditya600/trailhound.git
 cd trailhound
 
 python -m trailhound rules
@@ -94,7 +94,7 @@ trailhound/
 tests/             71 unit and end-to-end tests
 ```
 
-A rule takes one event and returns `None` or a dict of details. Threshold rules count matches per group (for example per source IP) inside a time window and fire once when the count is reached. See `docs/WALKTHROUGH.md` for how to add your own rule.
+A rule takes one event and returns `None` or a dict of details. Threshold rules count matches per group (for example per source IP) inside a time window and fire once when the count is reached.
 
 ## Limitations
 
