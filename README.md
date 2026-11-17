@@ -11,7 +11,7 @@ It needs only Python 3.9+ and nothing else. It never connects to AWS, so it is s
 ## Quick start
 
 ```bash
-git clone https://github.com/<your-handle>/trailhound.git
+git clone https://github.com/<aditya600>/trailhound.git
 cd trailhound
 
 python -m trailhound rules
