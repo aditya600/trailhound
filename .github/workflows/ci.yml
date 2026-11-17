@@ -1,0 +1,24 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+      - name: Smoke test the CLI
+        run: |
+          python -m trailhound rules
+          python -m trailhound detect sample_data/cloudtrail_attack_scenario.json --min-severity high || test $? -eq 1
+          python -m trailhound audit-iam sample_data/policies || test $? -eq 1

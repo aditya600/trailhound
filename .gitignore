@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+# never commit real logs or reports from real accounts
+logs/
+report.md
+*.log

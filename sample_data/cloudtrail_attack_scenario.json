@@ -1,0 +1,819 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "123456789012",
+        "arn": "arn:aws:iam::123456789012:root",
+        "accountId": "123456789012"
+      },
+      "eventTime": "2026-11-02T01:05:00Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.77",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Success"
+      },
+      "requestID": "f8ee25a7-25cd-57fd-9f62-aeb5d3d6fbda",
+      "eventID": "1f347981-68b8-5693-84aa-b6dcb68eb9f5",
+      "eventType": "AwsConsoleSignIn",
+      "recipientAccountId": "123456789012",
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEALICE",
+        "arn": "arn:aws:iam::123456789012:user/alice",
+        "accountId": "123456789012",
+        "userName": "alice"
+      },
+      "eventTime": "2026-11-02T01:30:00Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.10",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Success"
+      },
+      "requestID": "8d9ae254-d135-53bc-855a-79abfc29ffba",
+      "eventID": "eb444c26-aff2-54da-8a6b-92d8a77d3222",
+      "eventType": "AwsConsoleSignIn",
+      "recipientAccountId": "123456789012",
+      "additionalEventData": {
+        "MFAUsed": "Yes"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEALICE",
+        "arn": "arn:aws:iam::123456789012:user/alice",
+        "accountId": "123456789012",
+        "userName": "alice"
+      },
+      "eventTime": "2026-11-02T01:31:00Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeInstances",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.10",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": null,
+      "responseElements": null,
+      "requestID": "6d21c0e0-1b81-596e-aa07-d7d08c114c85",
+      "eventID": "f46bf7d9-c12b-5876-8719-494f77a94ae3",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBOB",
+        "arn": "arn:aws:iam::123456789012:user/bob",
+        "accountId": "123456789012",
+        "userName": "bob"
+      },
+      "eventTime": "2026-11-02T01:40:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "ListBuckets",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.10",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": null,
+      "responseElements": null,
+      "requestID": "9e9786ac-6cc6-5b90-ad29-c0e262ca02bf",
+      "eventID": "90857844-f9e9-59a3-ac07-9dad5f02e140",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEADMIN-OPS",
+        "arn": "arn:aws:iam::123456789012:user/admin-ops",
+        "accountId": "123456789012",
+        "userName": "admin-ops"
+      },
+      "eventTime": "2026-11-02T01:45:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "AttachUserPolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.10",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "userName": "bob",
+        "policyArn": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+      },
+      "responseElements": null,
+      "requestID": "c1af10b7-e63e-5274-b67f-20955a980ba5",
+      "eventID": "a16c187c-a88a-5144-aa14-2e631b98e636",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBOB",
+        "arn": "arn:aws:iam::123456789012:user/bob",
+        "accountId": "123456789012",
+        "userName": "bob"
+      },
+      "eventTime": "2026-11-02T01:50:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.10",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "bucketName": "corp-reports-demo",
+        "key": "q3/summary.pdf"
+      },
+      "responseElements": null,
+      "requestID": "c9fd624e-9137-5e23-b689-54564c5ff585",
+      "eventID": "ee6580d8-2b4a-5a57-abb8-0a3e80acc06b",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLESVC-BACKUP",
+        "arn": "arn:aws:iam::123456789012:user/svc-backup",
+        "accountId": "123456789012",
+        "userName": "svc-backup"
+      },
+      "eventTime": "2026-11-02T02:14:00Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "requestID": "c2b3881f-6a09-5d2c-8951-d82ca6ed3c2f",
+      "eventID": "57f45b62-0144-536c-b5ac-3a9c0c0845d9",
+      "eventType": "AwsConsoleSignIn",
+      "recipientAccountId": "123456789012",
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLESVC-BACKUP",
+        "arn": "arn:aws:iam::123456789012:user/svc-backup",
+        "accountId": "123456789012",
+        "userName": "svc-backup"
+      },
+      "eventTime": "2026-11-02T02:14:25Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "requestID": "fe4d0ed1-ed8b-526d-859e-d7bd94a83afd",
+      "eventID": "e85d166b-f4de-5b10-af92-9d5a99069bfc",
+      "eventType": "AwsConsoleSignIn",
+      "recipientAccountId": "123456789012",
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLESVC-BACKUP",
+        "arn": "arn:aws:iam::123456789012:user/svc-backup",
+        "accountId": "123456789012",
+        "userName": "svc-backup"
+      },
+      "eventTime": "2026-11-02T02:14:50Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "requestID": "d13366e9-0cfb-5b92-bd05-8f06863d7fd1",
+      "eventID": "9df73c4c-f53f-5fce-9687-caf09e82b651",
+      "eventType": "AwsConsoleSignIn",
+      "recipientAccountId": "123456789012",
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLESVC-BACKUP",
+        "arn": "arn:aws:iam::123456789012:user/svc-backup",
+        "accountId": "123456789012",
+        "userName": "svc-backup"
+      },
+      "eventTime": "2026-11-02T02:15:15Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "requestID": "16f49f5b-27d6-5108-aca2-808a4ce12325",
+      "eventID": "3590ab60-c714-5ed4-955c-1e6d3fdfe9d5",
+      "eventType": "AwsConsoleSignIn",
+      "recipientAccountId": "123456789012",
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLESVC-BACKUP",
+        "arn": "arn:aws:iam::123456789012:user/svc-backup",
+        "accountId": "123456789012",
+        "userName": "svc-backup"
+      },
+      "eventTime": "2026-11-02T02:15:40Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "requestID": "c5bd5023-c877-5d39-bd1b-c6974d9839eb",
+      "eventID": "4e1d94eb-e282-5144-9385-b2260fd76da5",
+      "eventType": "AwsConsoleSignIn",
+      "recipientAccountId": "123456789012",
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLESVC-BACKUP",
+        "arn": "arn:aws:iam::123456789012:user/svc-backup",
+        "accountId": "123456789012",
+        "userName": "svc-backup"
+      },
+      "eventTime": "2026-11-02T02:16:05Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "requestID": "b5c482da-350a-5812-a31a-2ad8fecc78ac",
+      "eventID": "e1468080-036e-5918-90ca-f5cf7e0fbe3a",
+      "eventType": "AwsConsoleSignIn",
+      "recipientAccountId": "123456789012",
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLESVC-BACKUP",
+        "arn": "arn:aws:iam::123456789012:user/svc-backup",
+        "accountId": "123456789012",
+        "userName": "svc-backup"
+      },
+      "eventTime": "2026-11-02T02:17:00Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Success"
+      },
+      "requestID": "e92ae914-1ce1-50b1-b334-fd4176d075bd",
+      "eventID": "8023129d-4aa9-50dd-8b6a-bbd8faed89e3",
+      "eventType": "AwsConsoleSignIn",
+      "recipientAccountId": "123456789012",
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLESVC-BACKUP",
+        "arn": "arn:aws:iam::123456789012:user/svc-backup",
+        "accountId": "123456789012",
+        "userName": "svc-backup"
+      },
+      "eventTime": "2026-11-02T02:20:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateUser",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "userName": "backup-helper"
+      },
+      "responseElements": null,
+      "requestID": "e48918a5-0b56-528c-853b-c78bc3168e07",
+      "eventID": "f189b324-c2ec-5fae-9cff-8686cbe9caf0",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLESVC-BACKUP",
+        "arn": "arn:aws:iam::123456789012:user/svc-backup",
+        "accountId": "123456789012",
+        "userName": "svc-backup"
+      },
+      "eventTime": "2026-11-02T02:21:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateAccessKey",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "userName": "backup-helper"
+      },
+      "responseElements": {
+        "accessKey": {
+          "userName": "backup-helper",
+          "status": "Active"
+        }
+      },
+      "requestID": "3f6651fb-784d-58a3-a979-026fe8775fd4",
+      "eventID": "0ff43291-26f7-5e01-93b9-ce7349d1c6a4",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLESVC-BACKUP",
+        "arn": "arn:aws:iam::123456789012:user/svc-backup",
+        "accountId": "123456789012",
+        "userName": "svc-backup"
+      },
+      "eventTime": "2026-11-02T02:22:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "AttachUserPolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "userName": "backup-helper",
+        "policyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      },
+      "responseElements": null,
+      "requestID": "36784dbc-fac4-529c-b8f9-8a5112bf9d81",
+      "eventID": "1499f6df-9082-5ba3-95e9-20c4c149c936",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:25:00Z",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "StopLogging",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "name": "corp-trail"
+      },
+      "responseElements": null,
+      "requestID": "7771acbb-3b9c-57a5-a4c7-b4625ab174de",
+      "eventID": "f79b2506-197a-57e9-b8c8-2e23e1c15bde",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:26:00Z",
+      "eventSource": "guardduty.amazonaws.com",
+      "eventName": "UpdateDetector",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "detectorId": "12abc34d567e8fa901bc2d34e56789f0",
+        "enable": false
+      },
+      "responseElements": null,
+      "requestID": "be306241-415a-58cc-ba97-a67744c9c030",
+      "eventID": "61ed94fc-c273-5864-bb94-627ca5d95c73",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:28:00Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "AuthorizeSecurityGroupIngress",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "groupId": "sg-0abc1234def567890",
+        "ipPermissions": {
+          "items": [
+            {
+              "ipProtocol": "tcp",
+              "fromPort": 22,
+              "toPort": 22,
+              "ipRanges": {
+                "items": [
+                  {
+                    "cidrIp": "0.0.0.0/0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "responseElements": null,
+      "requestID": "cf9e5d87-6e3e-59c7-bda2-4d9e46c1a3bb",
+      "eventID": "2b470d3a-7ad1-5a66-bff3-aded7721e283",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:30:00Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "GetSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "secretId": "prod/app/secret-1"
+      },
+      "responseElements": null,
+      "requestID": "fd86733d-1de9-55f0-abd0-0fe79a41a44e",
+      "eventID": "85db6db4-d431-54fe-be02-d3b2b1fb2955",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:30:10Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "GetSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "secretId": "prod/app/secret-2"
+      },
+      "responseElements": null,
+      "requestID": "e7dc28ff-50f8-589e-8ddd-711b3d9ab130",
+      "eventID": "da28402a-d3bb-5970-9bae-010199a5d322",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:30:20Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "GetSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "secretId": "prod/app/secret-3"
+      },
+      "responseElements": null,
+      "requestID": "b9789382-b2ae-591c-b459-543c6935fadd",
+      "eventID": "80f054bb-0f0f-57c2-892f-8c31add241b6",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:30:30Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "GetSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "secretId": "prod/app/secret-4"
+      },
+      "responseElements": null,
+      "requestID": "1d001065-d0bc-5c38-b0ce-45749a05662e",
+      "eventID": "dd6cbc6e-6579-5d94-be28-ce0a0f55116f",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:30:40Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "GetSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "secretId": "prod/app/secret-5"
+      },
+      "responseElements": null,
+      "requestID": "a27fa827-4aa2-50dd-94c7-04a64fa1c7c6",
+      "eventID": "96a8533a-efe9-53df-bf6c-50c3d5b9d6dc",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:30:50Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "GetSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "secretId": "prod/app/secret-6"
+      },
+      "responseElements": null,
+      "requestID": "7707ddb8-f278-5375-bfe4-cd6116d05d01",
+      "eventID": "705ed2e1-cf75-5f2a-9b76-c0d234f3adf3",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:31:00Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "GetSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "secretId": "prod/app/secret-7"
+      },
+      "responseElements": null,
+      "requestID": "afdc11aa-b241-5bbc-943b-c48641d49c46",
+      "eventID": "dee823e5-8f8d-5e99-baa1-8d620d1b4709",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:31:10Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "GetSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "secretId": "prod/app/secret-8"
+      },
+      "responseElements": null,
+      "requestID": "93726438-3a2b-5722-9e6a-8bd5c509f053",
+      "eventID": "2597e8f7-f92b-530e-b66b-5bc30f6ec71c",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:31:20Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "GetSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "secretId": "prod/app/secret-9"
+      },
+      "responseElements": null,
+      "requestID": "cfdadc45-1c5b-5e57-b212-3c77e8130457",
+      "eventID": "2eb5052f-22a4-5e91-a1c2-30d8d69d8da3",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:31:30Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "GetSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "secretId": "prod/app/secret-10"
+      },
+      "responseElements": null,
+      "requestID": "3e6710cf-f105-52db-ae5b-bdf5039c3b52",
+      "eventID": "fed85d9b-449c-5775-b6bf-e8f56c15e08b",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:31:40Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "GetSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "secretId": "prod/app/secret-11"
+      },
+      "responseElements": null,
+      "requestID": "e788d1ad-b983-5f8a-8276-79156364c851",
+      "eventID": "312d202f-ff5e-503d-841e-3417b73fbeb5",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:31:50Z",
+      "eventSource": "secretsmanager.amazonaws.com",
+      "eventName": "GetSecretValue",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "secretId": "prod/app/secret-12"
+      },
+      "responseElements": null,
+      "requestID": "ab3cfbae-208f-514c-9bd0-00106d3c91d7",
+      "eventID": "cc3750f8-420d-5599-b1d8-7759d313b8b1",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEBACKUP-HELPER",
+        "arn": "arn:aws:iam::123456789012:user/backup-helper",
+        "accountId": "123456789012",
+        "userName": "backup-helper"
+      },
+      "eventTime": "2026-11-02T02:35:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "DeleteBucketPublicAccessBlock",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.50",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {
+        "bucketName": "corp-reports-demo"
+      },
+      "responseElements": null,
+      "requestID": "c56c463a-375d-5199-b3a5-745ecb02b2b3",
+      "eventID": "380398f6-5876-53b6-8116-33f567daaa41",
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "123456789012"
+    }
+  ]
+}
