@@ -271,6 +271,16 @@ class LoaderTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             load_events(str(path))
 
+class ConfigRecorderRuleTests(unittest.TestCase):
+    def test_config_recorder_stopped(self):
+        for name in ("StopConfigurationRecorder", "DeleteConfigurationRecorder"):
+            event = make_event(name, "config.amazonaws.com",
+                               requestParameters={"configurationRecorderName": "default"})
+            self.assertEqual(ids(run_detections([event])), ["TH-012"], name)
+
+    def test_config_recorder_start_is_quiet(self):
+        event = make_event("StartConfigurationRecorder", "config.amazonaws.com")
+        self.assertEqual(run_detections([event]), [])
 
 if __name__ == "__main__":
     unittest.main()

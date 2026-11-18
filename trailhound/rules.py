@@ -194,7 +194,15 @@ def _secret_read(event: dict) -> Details:
 # The rule catalogue
 # --------------------------------------------------------------------------
 
+def _config_recorder_stopped(event: dict) -> Details:
+    if event.get("eventSource") != "config.amazonaws.com":
+        return None
+    if event.get("eventName") in {"StopConfigurationRecorder", "DeleteConfigurationRecorder"}:
+        return {"recorder": get_path(event, "requestParameters", "configurationRecorderName")}
+    return None
+
 RULES: List[Rule] = [
+
     Rule("TH-001", "Root account activity", "high", "T1078.004",
          "The AWS root user made a call. Root should be used almost never.",
          _root_usage),
@@ -229,6 +237,10 @@ RULES: List[Rule] = [
          "One identity read 10 or more secrets or parameters within 5 minutes.",
          _secret_read, threshold=10, window_seconds=300,
          group_by=identity_name),
+
+    Rule("TH-012", "AWS Config recording stopped", "high", "T1562.008",
+         "AWS Config stopped recording resource changes, which hides configuration drift.",
+         _config_recorder_stopped),
 ]
 
 
